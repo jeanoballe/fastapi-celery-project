@@ -14,6 +14,7 @@ from .schemas import UserBody
 from .tasks import sample_task, task_process_notification, task_send_welcome_email
 from .models import User
 from project.database import get_db_session
+from .tasks import sample_task, task_process_notification, task_send_welcome_email, task_add_subscribe
 
 
 logger = logging.getLogger(__name__)
@@ -100,6 +101,33 @@ def transaction_celery(session: Session = Depends(get_db_session)):
         session.rollback()
         raise
 
-    print(f'user {user.id} {user.username} is persistent now')
+    logger.info(f"user {user.id} {user.username} is persistent now")
     task_send_welcome_email.delay(user.id)
     return {"message": "done"}
+
+
+@users_router.post("/user_subscribe/")
+def user_subscribe(
+        user_body: UserBody,
+        session: Session = Depends(get_db_session)
+):
+    try:
+        user = session.query(User).filter_by(
+            username=user_body.username
+        ).first()
+        if user:
+            user_id = user.id
+        else:
+            user = User(
+                username=user_body.username,
+                email=user_body.email,
+            )
+            session.add(user)
+            session.commit()
+            user_id = user.id
+    except Exception as e:
+        session.rollback()
+        raise
+
+    task_add_subscribe.delay(user_id)
+    return {"message": "send task to Celery successfully"}

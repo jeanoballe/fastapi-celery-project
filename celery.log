@@ -1,0 +1,121 @@
+[2022-12-02 12:33:18,117: WARNING/MainProcess] /usr/local/lib/python3.10/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_RESULT_BACKEND' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the result_backend instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2022-12-02 12:33:18,117: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2022-12-02 12:33:19,245: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-02 12:33:19,247: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-02 12:33:20,255: INFO/MainProcess] mingle: all alone
+[2022-12-02 12:33:20,267: INFO/MainProcess] celery@aef0e4aa8aeb ready.
+[2022-12-02 12:33:24,515: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-02 12:35:14,819: INFO/MainProcess] Task project.users.tasks.task_test_logger[387cfab4-4dde-4644-bda7-12523022bc0b] received
+[2022-12-02 12:35:14,829: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[387cfab4-4dde-4644-bda7-12523022bc0b] succeeded in 0.0075053750042570755s: None
+[2022-12-02 12:35:14,831: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:14,833: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:14,833: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:14,834: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:14,839: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:14,839: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:45,954: INFO/MainProcess] Task project.users.tasks.task_test_logger[506cd28e-9ee3-4b54-a9ef-5747eb7a0ca6] received
+[2022-12-02 12:35:45,957: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[506cd28e-9ee3-4b54-a9ef-5747eb7a0ca6] succeeded in 0.001255740993656218s: None
+[2022-12-02 12:35:45,959: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:45,961: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:45,961: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:45,962: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:45,966: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:45,966: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:50,003: INFO/MainProcess] Task project.users.tasks.task_test_logger[500967c5-4ba8-4654-951c-3da12bbcd839] received
+[2022-12-02 12:35:50,006: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[500967c5-4ba8-4654-951c-3da12bbcd839] succeeded in 0.0014823950041318312s: None
+[2022-12-02 12:35:50,007: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:50,009: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:50,009: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:50,010: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:50,020: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:50,020: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:50,608: INFO/MainProcess] Task project.users.tasks.task_test_logger[0b3f588b-3114-444b-9891-dc2e92c7039c] received
+[2022-12-02 12:35:50,611: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[0b3f588b-3114-444b-9891-dc2e92c7039c] succeeded in 0.0011643560137599707s: None
+[2022-12-02 12:35:50,612: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:50,614: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:50,614: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:50,615: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:50,618: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:50,619: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:50,947: INFO/MainProcess] Task project.users.tasks.task_test_logger[08cb88d2-dbdc-48b6-8b6a-be8fdb780184] received
+[2022-12-02 12:35:50,950: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[08cb88d2-dbdc-48b6-8b6a-be8fdb780184] succeeded in 0.001345290002063848s: None
+[2022-12-02 12:35:50,951: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:50,953: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:50,953: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:50,955: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:50,961: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:50,961: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:51,253: INFO/MainProcess] Task project.users.tasks.task_test_logger[a54f3b22-e4f4-40df-a2f8-6c2faf6c5f9a] received
+[2022-12-02 12:35:51,256: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[a54f3b22-e4f4-40df-a2f8-6c2faf6c5f9a] succeeded in 0.0013018369936617091s: None
+[2022-12-02 12:35:51,257: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:51,258: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:51,259: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:51,260: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:51,264: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:51,264: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:51,555: INFO/MainProcess] Task project.users.tasks.task_test_logger[a70fc007-fe7f-46ed-af6b-3a184871b21d] received
+[2022-12-02 12:35:51,559: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[a70fc007-fe7f-46ed-af6b-3a184871b21d] succeeded in 0.0012662500084843487s: None
+[2022-12-02 12:35:51,560: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:51,562: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:51,562: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:51,563: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:51,576: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:51,577: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:51,772: INFO/MainProcess] Task project.users.tasks.task_test_logger[774dda41-0b32-43d8-8d15-8625f7d43a48] received
+[2022-12-02 12:35:51,775: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[774dda41-0b32-43d8-8d15-8625f7d43a48] succeeded in 0.001152892000391148s: None
+[2022-12-02 12:35:51,776: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:51,777: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:51,777: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-02 12:35:51,778: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-02 12:35:51,782: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:35:51,782: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-02 12:41:46,294: WARNING/MainProcess] /usr/local/lib/python3.10/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_RESULT_BACKEND' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the result_backend instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2022-12-02 12:41:46,294: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2022-12-02 12:41:47,366: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-02 12:41:47,368: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-02 12:41:48,376: INFO/MainProcess] mingle: all alone
+[2022-12-02 12:41:48,388: INFO/MainProcess] celery@aef0e4aa8aeb ready.
+[2022-12-02 12:41:49,515: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-02 12:42:24,581: WARNING/MainProcess] /usr/local/lib/python3.10/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_RESULT_BACKEND' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the result_backend instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2022-12-02 12:42:24,581: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2022-12-02 12:42:25,543: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-02 12:42:25,545: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-02 12:42:26,553: INFO/MainProcess] mingle: all alone
+[2022-12-02 12:42:26,564: INFO/MainProcess] celery@aef0e4aa8aeb ready.
+[2022-12-02 12:42:29,516: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-05 14:15:45,041: INFO/MainProcess] beat: Starting...
+[2022-12-05 14:15:45,414: WARNING/MainProcess] /usr/local/lib/python3.10/site-packages/celery/app/utils.py:204: CDeprecationWarning: 
+    The 'CELERY_RESULT_BACKEND' setting is deprecated and scheduled for removal in
+    version 6.0.0. Use the result_backend instead
+
+  deprecated.warn(description=f'The {setting!r} setting',
+
+[2022-12-05 14:15:45,415: WARNING/MainProcess] Please run `celery upgrade settings path/to/settings.py` to avoid these warnings and to allow a smoother upgrade to Celery 6.0.
+[2022-12-05 14:15:46,259: INFO/MainProcess] Connected to redis://redis:6379/0
+[2022-12-05 14:15:46,261: INFO/MainProcess] mingle: searching for neighbors
+[2022-12-05 14:15:47,267: INFO/MainProcess] mingle: all alone
+[2022-12-05 14:15:47,277: INFO/MainProcess] celery@aef0e4aa8aeb ready.
+[2022-12-05 14:15:55,179: INFO/MainProcess] Events of group {task} enabled by remote.
+[2022-12-05 14:19:01,517: INFO/MainProcess] Task project.users.tasks.task_test_logger[a52c41f9-05db-4b23-84fa-5de6615d9e44] received
+[2022-12-05 14:19:01,522: INFO/ForkPoolWorker-15] Task project.users.tasks.task_test_logger[a52c41f9-05db-4b23-84fa-5de6615d9e44] succeeded in 0.002396777999990718s: None
+[2022-12-05 14:19:01,523: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-05 14:19:01,524: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-05 14:19:01,524: INFO/ForkPoolWorker-15] Connecting to redis
+[2022-12-05 14:19:01,525: INFO/ForkPoolWorker-15] Redis connection made
+[2022-12-05 14:19:01,529: INFO/ForkPoolWorker-15] Redis connection lost
+[2022-12-05 14:19:01,529: INFO/ForkPoolWorker-15] Redis connection lost
