@@ -8,6 +8,7 @@ from celery.signals import task_postrun
 from celery.utils.log import get_task_logger
 from celery.signals import after_setup_logger
 from project.database import db_context
+from project.celery_utils import custom_celery_task
 
 logger = get_task_logger(__name__)
 
@@ -45,8 +46,16 @@ def sample_task(email):
 
 
 # Task Retry Decorator
-@shared_task(bind=True, autoretry_for=(Exception,), retry_kwargs={"max_retries": 7, "countdown": 5})
-def task_process_notification(self):
+# @shared_task(bind=True, autoretry_for=(Exception,), retry_kwargs={"max_retries": 7, "countdown": 5})
+# def task_process_notification(self):
+#     if not random.choice([0, 1]):
+#         # mimic random error
+#         raise Exception()
+
+#     requests.post("https://httpbin.org/delay/5")
+
+@custom_celery_task(max_retries=3)
+def task_process_notification():
     if not random.choice([0, 1]):
         # mimic random error
         raise Exception()
